@@ -12,7 +12,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   bool isDarkTheme = false; //theme state
 
-  @override
+  @override //building widget tree
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: isDarkTheme ? _buildDarkTheme() : _buildLightTheme(),
