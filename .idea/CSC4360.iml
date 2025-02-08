@@ -2,7 +2,29 @@
 <module type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/a1/e1/junk/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/a1/e1/junk/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/a1/e1/junk/build" />
+      <excludeFolder url="file://$MODULE_DIR$/a1/spaceeto1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/a1/spaceeto1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/a1/spaceeto1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/a2/a2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/a2/a2/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/a2/a2/build" />
+      <excludeFolder url="file://$MODULE_DIR$/a3/a31/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/a3/a31/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/a3/a31/build" />
+      <excludeFolder url="file://$MODULE_DIR$/a3/digital_pet_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/a3/digital_pet_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/a3/digital_pet_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/cw1/cw1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/cw1/cw1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/cw1/cw1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/myapp/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/myapp/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/myapp/build" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
