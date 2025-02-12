@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
@@ -53,7 +55,7 @@ class HomeScreen extends StatelessWidget {
   final bool isDarkTheme;
   final VoidCallback onThemeToggle;
 
-  const HomeScreen({required this.isDarkTheme, required this.onThemeToggle});
+  const HomeScreen({super.key, required this.isDarkTheme, required this.onThemeToggle});
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +108,7 @@ class SettingsScreen extends StatelessWidget {
   final VoidCallback onThemeToggle;
 
   const SettingsScreen(
-      {required this.isDarkTheme, required this.onThemeToggle});
+      {super.key, required this.isDarkTheme, required this.onThemeToggle});
 
   @override
   Widget build(BuildContext context) {
