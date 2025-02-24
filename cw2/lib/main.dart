@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
 }
 
 class CounterWidget extends StatefulWidget {
+  const CounterWidget({super.key});
+
   @override
   _CounterWidgetState createState() => _CounterWidgetState();
 }
@@ -58,7 +60,7 @@ class _CounterWidgetState extends State<CounterWidget> {
           ),
           ElevatedButton(
             style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+              foregroundColor: WidgetStateProperty.all<Color>(Colors.blue),
             ),
             onPressed: () {
               setState(() {
@@ -69,7 +71,7 @@ class _CounterWidgetState extends State<CounterWidget> {
           ),
           ElevatedButton(
             style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+              foregroundColor: WidgetStateProperty.all<Color>(Colors.blue),
             ),
             onPressed: () {
               setState(() {
@@ -92,7 +94,7 @@ class _CounterWidgetState extends State<CounterWidget> {
           ),
           ElevatedButton(
             style: ButtonStyle(
-              foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+              foregroundColor: WidgetStateProperty.all<Color>(Colors.blue),
             ),
             onPressed: () {
               setState(() {
