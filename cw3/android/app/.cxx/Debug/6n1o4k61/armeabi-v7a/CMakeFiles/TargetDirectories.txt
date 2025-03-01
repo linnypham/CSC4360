@@ -1,0 +1,2 @@
+C:/Users/Linny/Documents/GitHub/CSC4360/cw3/android/app/.cxx/Debug/6n1o4k61/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Linny/Documents/GitHub/CSC4360/cw3/android/app/.cxx/Debug/6n1o4k61/armeabi-v7a/CMakeFiles/rebuild_cache.dir
