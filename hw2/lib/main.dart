@@ -5,6 +5,8 @@ void main() {
 }
 
 class CalculatorApp extends StatelessWidget {
+  const CalculatorApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,6 +16,8 @@ class CalculatorApp extends StatelessWidget {
 }
 
 class CalculatorScreen extends StatefulWidget {
+  const CalculatorScreen({super.key});
+
   @override
   _CalculatorScreenState createState() => _CalculatorScreenState();
 }

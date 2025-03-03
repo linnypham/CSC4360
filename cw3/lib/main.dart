@@ -11,6 +11,8 @@ class Task {
 }
 
 class TaskManagerApp extends StatelessWidget {
+  const TaskManagerApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,6 +23,8 @@ class TaskManagerApp extends StatelessWidget {
 }
 
 class TaskListScreen extends StatefulWidget {
+  const TaskListScreen({super.key});
+
   @override
   _TaskListScreenState createState() => _TaskListScreenState();
 }
