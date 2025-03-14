@@ -78,13 +78,20 @@ class GameProvider extends ChangeNotifier {
     isChecking = false;
     notifyListeners();
   }
+  void resetGame() {
+    firstSelected = null;
+    isChecking = false;
+    _initializeGame();  
+    notifyListeners();
+  }
 }
+  
 
 class CardMatchingGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Card Matching Game')),
+      appBar: AppBar(title: const Text('MTG Matching')),
       body: Consumer<GameProvider>(
         builder: (context, game, child) {
           return GridView.builder(
@@ -102,9 +109,17 @@ class CardMatchingGame extends StatelessWidget {
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          context.read<GameProvider>().resetGame();  
+        },
+        child: const Icon(Icons.refresh),
+        tooltip: 'Reset Game',
+      ),
     );
   }
 }
+
 
 class CardWidget extends StatelessWidget {
   final CardModel card;
@@ -121,12 +136,10 @@ class CardWidget extends StatelessWidget {
         },
         child: card.isFaceUp || card.isMatched
             ? Image.asset(card.image, key: ValueKey(card.id))
-            : Container(
+            : Image.asset(
+                'assets/card_back.jpeg',  
                 key: ValueKey('back_${card.id}'),
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(8),
-                ),
+                fit: BoxFit.cover,
               ),
       ),
     );
