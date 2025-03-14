@@ -41,43 +41,42 @@ class GameProvider extends ChangeNotifier {
   }
 
   void _initializeGame() {
-    List<String> images = List.generate(8, (index) => 'assets/card_$index.png');
-    List<String> pairedImages = [...images, ...images];
-    pairedImages.shuffle(Random());
+  List<String> images = List.generate(8, (index) => 'assets/card_$index.png');
+  List<String> pairedImages = [...images, ...images]..shuffle(Random());
 
-    cards = pairedImages.map((img) => CardModel(id: UniqueKey().toString(), image: img)).toList();
-    notifyListeners();
-  }
+  cards = List.generate(pairedImages.length, (index) => 
+    CardModel(id: index.toString(), image: pairedImages[index])
+  );
+  notifyListeners();
+}
+
 
   void flipCard(CardModel card) {
-    if (isChecking || card.isFaceUp || card.isMatched) return;
+  if (isChecking || card.isFaceUp || card.isMatched) return;
 
-    card.isFaceUp = true;
-    notifyListeners();
+  card.isFaceUp = true;
+  notifyListeners();
 
-    if (firstSelected == null) {
-      firstSelected = card;
-    } else {
-      _checkMatch(card);
-    }
+  firstSelected == null ? firstSelected = card : _checkMatch(card);
   }
+
 
   void _checkMatch(CardModel secondSelected) async {
-    isChecking = true;
-    await Future.delayed(const Duration(seconds: 1));
+  isChecking = true;
+  await Future.delayed(const Duration(seconds: 1));
 
-    if (firstSelected!.image == secondSelected.image) {
-      firstSelected!.isMatched = true;
-      secondSelected.isMatched = true;
-    } else {
-      firstSelected!.isFaceUp = false;
-      secondSelected.isFaceUp = false;
-    }
-
-    firstSelected = null;
-    isChecking = false;
-    notifyListeners();
+  var first = firstSelected;
+  if (first != null && first.image == secondSelected.image) {
+    first.isMatched = secondSelected.isMatched = true;
+  } else {
+    first?.isFaceUp = secondSelected.isFaceUp = false;
   }
+
+  firstSelected = null;
+  isChecking = false;
+  notifyListeners();
+  }
+
   void resetGame() {
     firstSelected = null;
     isChecking = false;
