@@ -9,94 +9,145 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const appTitle = 'Form Validation Demo';
-
     return MaterialApp(
-      title: appTitle,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(appTitle),
+      title: 'Form Validation Demo',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const SignupScreen(),
+    );
+  }
+}
+
+// Signup Screen
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({super.key});
+
+  @override
+  SignupScreenState createState() => SignupScreenState();
+}
+
+class SignupScreenState extends State<SignupScreen> {
+  final _formKey = GlobalKey<FormBuilderState>();
+
+  void _submitForm() {
+    if (_formKey.currentState!.saveAndValidate()) {
+      // Get Form Data
+      final formData = _formKey.currentState!.value;
+      
+      // Navigate to Confirmation Screen
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => ConfirmationScreen(formData: formData),
         ),
-        body: const MyCustomForm(),
+      );
+    } else {
+      // Show error message if form is invalid
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Please fix the errors in the form')),
+      );
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Form Validation Demo')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: FormBuilder(
+          key: _formKey,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Username Field
+              FormBuilderTextField(
+                name: 'username',
+                decoration: const InputDecoration(labelText: 'Username',icon:Icon(Icons.people)),
+                validator: FormBuilderValidators.compose([
+                  FormBuilderValidators.required(),
+                  FormBuilderValidators.minLength(3),
+                ]),
+              ),
+              const SizedBox(height: 10),
+
+              // Email Field
+              FormBuilderTextField(
+                name: 'email',
+                decoration: const InputDecoration(labelText: 'Email Address',icon:Icon(Icons.email)),
+                validator: FormBuilderValidators.compose([
+                  FormBuilderValidators.required(),
+                  FormBuilderValidators.email(),
+                ]),
+              ),
+              const SizedBox(height: 10),
+
+              // Date of Birth Field
+              FormBuilderDateTimePicker(
+                name: 'dob',
+                inputType: InputType.date,
+                decoration: const InputDecoration(labelText: 'Date of Birth',icon:Icon(Icons.calendar_month)),
+                validator: FormBuilderValidators.compose([
+                  FormBuilderValidators.required(),
+                ]),
+              ),
+              const SizedBox(height: 10),
+
+              // Password Field
+              FormBuilderTextField(
+                name: 'password',
+                decoration: const InputDecoration(labelText: 'Password',icon:Icon(Icons.password)),
+                obscureText: true,
+                validator: FormBuilderValidators.compose([
+                  FormBuilderValidators.required(),
+                  FormBuilderValidators.minLength(6),
+                ]),
+              ),
+              const SizedBox(height: 20),
+
+              // Submit Button
+              ElevatedButton(
+                onPressed: _submitForm,
+                child: const Text('Sign Up'),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
 }
 
-class MyCustomForm extends StatefulWidget {
-  const MyCustomForm({super.key});
+// Confirmation Screen
+class ConfirmationScreen extends StatelessWidget {
+  final Map<String, dynamic> formData;
 
-  @override
-  MyCustomFormState createState() => MyCustomFormState();
-}
-
-class MyCustomFormState extends State<MyCustomForm> {
-  final _formKey = GlobalKey<FormBuilderState>();
+  const ConfirmationScreen({super.key, required this.formData});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: FormBuilder(
-        key: _formKey,
+    return Scaffold(
+      appBar: AppBar(title: const Text('Signup Successful')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Username Field
-            FormBuilderTextField(
-              name: 'username',
-              decoration: const InputDecoration(labelText: 'Username'),
-              validator: FormBuilderValidators.compose([
-                FormBuilderValidators.required(),
-                FormBuilderValidators.minLength(3),
-              ]),
-            ),
-            const SizedBox(height: 10),
-
-            // Email Field
-            FormBuilderTextField(
-              name: 'email',
-              decoration: const InputDecoration(labelText: 'Email Address'),
-              validator: FormBuilderValidators.compose([
-                FormBuilderValidators.required(),
-                FormBuilderValidators.email(),
-              ]),
-            ),
-            const SizedBox(height: 10),
-
-            // Date of Birth Field
-            FormBuilderDateTimePicker(
-              name: 'dob',
-              inputType: InputType.date,
-              decoration: const InputDecoration(labelText: 'Date of Birth'),
-              validator: FormBuilderValidators.compose([
-                FormBuilderValidators.required(),
-              ]),
-            ),
-            const SizedBox(height: 10),
-
-            // Password Field
-            FormBuilderTextField(
-              name: 'password',
-              decoration: const InputDecoration(labelText: 'Password'),
-              obscureText: true,
-              validator: FormBuilderValidators.compose([
-                FormBuilderValidators.required(),
-                FormBuilderValidators.minLength(6),
-              ]),
+            const Text(
+              'Signup Successful!',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 20),
+            Text('Username: ${formData['username']}'),
+            Text('Email: ${formData['email']}'),
+            Text('Date of Birth: ${formData['dob']}'),
+            const SizedBox(height: 20),
 
-            // Submit Button
+            // Back to Home Button
             ElevatedButton(
               onPressed: () {
-                if (_formKey.currentState!.saveAndValidate()) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(content: Text('Processing Data')),
-                  );
-                }
+                Navigator.pop(context);
               },
-              child: const Text('Submit'),
+              child: const Text('Go Back'),
             ),
           ],
         ),

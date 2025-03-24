@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9c7c2eb-f365-4f81-af1c-1d4a7e4520c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a1/e1/junk/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a1/e1/junk/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a1/spaceeto1/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a1/spaceeto1/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2/a2/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a2/a2/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a2/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a2/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a3/a31/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a3/a31/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a3/digital_pet_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a3/digital_pet_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a4/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a4/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a6/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a6/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a8/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a8/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatorapp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/calculatorapp/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cw1/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cw1/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cw2/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cw2/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cw3/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cw3/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/database/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw2/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hw2/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/i3/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/i3/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ca10/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/ca10/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
