@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9c7c2eb-f365-4f81-af1c-1d4a7e4520c5" name="Changes" comment="" />
+    <list default="true" id="e9c7c2eb-f365-4f81-af1c-1d4a7e4520c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/android/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/android/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/windows/flutter/generated_plugins.cmake" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
