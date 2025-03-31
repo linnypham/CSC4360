@@ -117,7 +117,7 @@ class _AquariumScreenState extends State<AquariumScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Virtual Aquarium')),
+      appBar: AppBar(title: Text('Aquarium')),
       body: Column(
         children: [
           Container(
@@ -137,7 +137,7 @@ class _AquariumScreenState extends State<AquariumScreen>
                               height: 20,
                               decoration: BoxDecoration(
                                 color: fish.color,
-                                shape: BoxShape.circle,
+                                shape: BoxShape.rectangle,
                               ),
                             ),
                           );
