@@ -8,6 +8,8 @@ void main() {
 }
 
 class AquariumApp extends StatelessWidget {
+  const AquariumApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,6 +32,8 @@ class Fish {
 }
 
 class AquariumScreen extends StatefulWidget {
+  const AquariumScreen({super.key});
+
   @override
   _AquariumScreenState createState() => _AquariumScreenState();
 }

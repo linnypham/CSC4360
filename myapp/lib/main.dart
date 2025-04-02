@@ -12,7 +12,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                 onPressed: () async {
                   String name = _nameController.text;
                   double price = double.parse(_priceController.text);
-                  if (name.isNotEmpty && price != null) {
+                  if (name.isNotEmpty) {
                     if (action == 'create') {
                       // Persist a new product to Firestore
                       await _products.add({"name": name, "price": price});
