@@ -6,9 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="e9c7c2eb-f365-4f81-af1c-1d4a7e4520c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cw5/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cw5/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/database/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/android/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/android/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/auth/login_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/models/task_model.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/screens/task_list_screen.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/services/firebase_service.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/windows/flutter/generated_plugins.cmake" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
