@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_database/firebase_database.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'firebase_crud.dart';
 
 class TaskListScreen extends StatefulWidget {
   @override
@@ -8,31 +8,22 @@ class TaskListScreen extends StatefulWidget {
 }
 
 class _TaskListScreenState extends State<TaskListScreen> {
-  final DatabaseReference _tasksRef =
-      FirebaseDatabase.instance.ref().child('tasks');
+  final FirestoreService _firestoreService = FirestoreService();
   final TextEditingController _taskController = TextEditingController();
 
   void _addTask() {
     if (_taskController.text.isNotEmpty) {
-      _tasksRef.push().set({
-        'name': _taskController.text,
-        'completed': false,
-      });
+      _firestoreService.addTask(_taskController.text);
       _taskController.clear();
     }
   }
 
   void _toggleCompletion(String taskId, bool currentStatus) {
-    _tasksRef.child(taskId).update({'completed': !currentStatus});
+    _firestoreService.updateTask(taskId, !currentStatus);
   }
 
   void _deleteTask(String taskId) {
-    _tasksRef.child(taskId).remove();
-  }
-
-  Future<void> _logout() async {
-    await FirebaseAuth.instance.signOut();
-    Navigator.pop(context);
+    _firestoreService.deleteTask(taskId);
   }
 
   @override
@@ -41,7 +32,12 @@ class _TaskListScreenState extends State<TaskListScreen> {
       appBar: AppBar(
         title: Text('Task Manager'),
         actions: [
-          IconButton(icon: Icon(Icons.logout), onPressed: _logout),
+          IconButton(
+            icon: Icon(Icons.logout),
+            onPressed: () async {
+              // Handle logout
+            },
+          ),
         ],
       ),
       body: Column(
@@ -62,32 +58,31 @@ class _TaskListScreenState extends State<TaskListScreen> {
             ),
           ),
           Expanded(
-            child: StreamBuilder(
-              stream: _tasksRef.onValue,
+            child: StreamBuilder<QuerySnapshot>(
+              stream: _firestoreService.getTasks(),
               builder:
-                  (context, AsyncSnapshot<DatabaseEvent> snapshot) {
-                if (!snapshot.hasData || snapshot.data!.snapshot.value == null) {
-                  return Center(child: Text('No tasks available.'));
+                  (context, AsyncSnapshot<QuerySnapshot> snapshot) {
+                if (!snapshot.hasData) {
+                  return Center(child: CircularProgressIndicator());
                 }
-                final tasks = Map<String, dynamic>.from(snapshot.data!.snapshot.value as Map);
+                final tasks = snapshot.data!.docs;
                 return ListView.builder(
                   itemCount: tasks.length,
                   itemBuilder: (context, index) {
-                    final taskId = tasks.keys.elementAt(index);
-                    final task = tasks[taskId];
+                    final task = tasks[index];
+                    final taskId = task.id;
+                    final taskData = task.data() as Map<String, dynamic>;
                     return ListTile(
-                      title:
-                          Text(task['name'], style:
-                              TextStyle(decoration:
-                                  task['completed'] ? TextDecoration.lineThrough : null)),
-                      leading:
-                          Checkbox(value:
-                              task['completed'], onChanged:
-                              (value) => _toggleCompletion(taskId, task['completed'])),
-                      trailing:
-                          IconButton(icon:
-                              Icon(Icons.delete), onPressed:
-                              () => _deleteTask(taskId)),
+                      title: Text(taskData['name']),
+                      leading: Checkbox(
+                        value: taskData['completed'],
+                        onChanged: (value) =>
+                            _toggleCompletion(taskId, taskData['completed']),
+                      ),
+                      trailing: IconButton(
+                        icon: Icon(Icons.delete),
+                        onPressed: () => _deleteTask(taskId),
+                      ),
                     );
                   },
                 );
