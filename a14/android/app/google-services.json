@@ -1,13 +1,32 @@
 {
   "project_info": {
-    "project_number": "362223279483",
-    "project_id": "a14-cloud-messaging",
-    "storage_bucket": "a14-cloud-messaging.firebasestorage.app"
+    "project_number": "784607382933",
+    "project_id": "cloud-notification-9abed",
+    "storage_bucket": "cloud-notification-9abed.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:362223279483:android:3ba10505ef53e0bdb331de",
+        "mobilesdk_app_id": "1:784607382933:android:1a4ade7a3162c3ba247a9c",
+        "android_client_info": {
+          "package_name": "a14.notification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlz9pjEDJrZhl4EafR-FTcy6ueMlnfD0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784607382933:android:463420cfe80b74ce247a9c",
         "android_client_info": {
           "package_name": "com.example.a14"
         }
@@ -15,7 +34,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDUvwT0cVBfgB-YfJlDOYLXVbCyMX6h_wo"
+          "current_key": "AIzaSyAlz9pjEDJrZhl4EafR-FTcy6ueMlnfD0Y"
         }
       ],
       "services": {

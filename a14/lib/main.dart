@@ -42,35 +42,45 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   late FirebaseMessaging messaging;
   String? notificationText;
+
   @override
   void initState() {
     super.initState();
     messaging = FirebaseMessaging.instance;
+
+   
     messaging.subscribeToTopic("messaging");
     messaging.getToken().then((value) {
-      print(value);
+      print("FCM Token: $value");
     });
+
+   
     FirebaseMessaging.onMessage.listen((RemoteMessage event) {
-      print("message recieved");
+      print("Message received");
       print(event.notification!.body);
       print(event.data.values);
+
+      
       showDialog(
-          context: context,
-          builder: (BuildContext context) {
-            return AlertDialog(
-              title: Text("Notification"),
-              content: Text(event.notification!.body!),
-              actions: [
-                TextButton(
-                  child: Text("Ok"),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                )
-              ],
-            );
-          });
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+            title: Text("Emergency"),
+            content: Text(event.notification!.body!),
+            actions: [
+              TextButton(
+                child: Text("Ok"),
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+              ),
+            ],
+          );
+        },
+      );
     });
+
+
     FirebaseMessaging.onMessageOpenedApp.listen((message) {
       print('Message clicked!');
     });

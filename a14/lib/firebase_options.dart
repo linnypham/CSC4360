@@ -41,46 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDdlBD4sXyJBExSQp25uYL7aDVK-M_KOYc',
-    appId: '1:362223279483:web:704ba6942dbd6069b331de',
-    messagingSenderId: '362223279483',
-    projectId: 'a14-cloud-messaging',
-    authDomain: 'a14-cloud-messaging.firebaseapp.com',
-    storageBucket: 'a14-cloud-messaging.firebasestorage.app',
+    apiKey: 'AIzaSyA0Hflx9RxUhdMtX0MYtYliYPtR3dRX6HA',
+    appId: '1:784607382933:web:b8dc86de21c9d2ab247a9c',
+    messagingSenderId: '784607382933',
+    projectId: 'cloud-notification-9abed',
+    authDomain: 'cloud-notification-9abed.firebaseapp.com',
+    storageBucket: 'cloud-notification-9abed.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDUvwT0cVBfgB-YfJlDOYLXVbCyMX6h_wo',
-    appId: '1:362223279483:android:3ba10505ef53e0bdb331de',
-    messagingSenderId: '362223279483',
-    projectId: 'a14-cloud-messaging',
-    storageBucket: 'a14-cloud-messaging.firebasestorage.app',
+    apiKey: 'AIzaSyAlz9pjEDJrZhl4EafR-FTcy6ueMlnfD0Y',
+    appId: '1:784607382933:android:463420cfe80b74ce247a9c',
+    messagingSenderId: '784607382933',
+    projectId: 'cloud-notification-9abed',
+    storageBucket: 'cloud-notification-9abed.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDHDX74E1SAMkaSOSOSPvsH056mqraGAoY',
-    appId: '1:362223279483:ios:777da4d34d7f7abbb331de',
-    messagingSenderId: '362223279483',
-    projectId: 'a14-cloud-messaging',
-    storageBucket: 'a14-cloud-messaging.firebasestorage.app',
+    apiKey: 'AIzaSyAd1tTxAvS0d1nq90vrVcx7F7Orhb7SaVI',
+    appId: '1:784607382933:ios:95f1cb971b43a44a247a9c',
+    messagingSenderId: '784607382933',
+    projectId: 'cloud-notification-9abed',
+    storageBucket: 'cloud-notification-9abed.firebasestorage.app',
     iosBundleId: 'com.example.a14',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDHDX74E1SAMkaSOSOSPvsH056mqraGAoY',
-    appId: '1:362223279483:ios:777da4d34d7f7abbb331de',
-    messagingSenderId: '362223279483',
-    projectId: 'a14-cloud-messaging',
-    storageBucket: 'a14-cloud-messaging.firebasestorage.app',
+    apiKey: 'AIzaSyAd1tTxAvS0d1nq90vrVcx7F7Orhb7SaVI',
+    appId: '1:784607382933:ios:95f1cb971b43a44a247a9c',
+    messagingSenderId: '784607382933',
+    projectId: 'cloud-notification-9abed',
+    storageBucket: 'cloud-notification-9abed.firebasestorage.app',
     iosBundleId: 'com.example.a14',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDdlBD4sXyJBExSQp25uYL7aDVK-M_KOYc',
-    appId: '1:362223279483:web:80081e3f684d9bf8b331de',
-    messagingSenderId: '362223279483',
-    projectId: 'a14-cloud-messaging',
-    authDomain: 'a14-cloud-messaging.firebaseapp.com',
-    storageBucket: 'a14-cloud-messaging.firebasestorage.app',
+    apiKey: 'AIzaSyA0Hflx9RxUhdMtX0MYtYliYPtR3dRX6HA',
+    appId: '1:784607382933:web:1397eb01e2c6c842247a9c',
+    messagingSenderId: '784607382933',
+    projectId: 'cloud-notification-9abed',
+    authDomain: 'cloud-notification-9abed.firebaseapp.com',
+    storageBucket: 'cloud-notification-9abed.firebasestorage.app',
   );
 }

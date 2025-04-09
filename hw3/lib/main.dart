@@ -87,6 +87,8 @@ class GameProvider extends ChangeNotifier {
   
 
 class CardMatchingGame extends StatelessWidget {
+  const CardMatchingGame({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -112,8 +114,8 @@ class CardMatchingGame extends StatelessWidget {
         onPressed: () {
           context.read<GameProvider>().resetGame();  
         },
-        child: const Icon(Icons.refresh),
         tooltip: 'Reset Game',
+        child: const Icon(Icons.refresh),
       ),
     );
   }
@@ -131,7 +133,7 @@ class CardWidget extends StatelessWidget {
       child: AnimatedSwitcher(
         duration: const Duration(milliseconds: 500),
         transitionBuilder: (child, animation) {
-          return RotationYTransition(child: child, animation: animation);
+          return RotationYTransition(animation: animation, child: child);
         },
         child: card.isFaceUp || card.isMatched
             ? Image.asset(card.image, key: ValueKey(card.id))

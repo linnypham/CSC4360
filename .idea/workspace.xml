@@ -4,7 +4,68 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9c7c2eb-f365-4f81-af1c-1d4a7e4520c5" name="Changes" comment="" />
+    <list default="true" id="e9c7c2eb-f365-4f81-af1c-1d4a7e4520c5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a1/e1/junk/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/a1/e1/junk/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a12/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/a12/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/.metadata" beforeDir="false" afterPath="$PROJECT_DIR$/a14/.metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/android/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/a14/android/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/android/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/a14/android/app/google-services.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/android/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/a14/android/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/a14/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/lib/firebase_options.dart" beforeDir="false" afterPath="$PROJECT_DIR$/a14/lib/firebase_options.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/a14/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/a14/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/a14/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/a14/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/a14/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a14/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/a14/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/a14/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/a14/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a14/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/a14/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a6/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a6/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a8/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/a8/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculatorapp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/calculatorapp/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw4/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cw4/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw5/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cw5/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/lib/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/lib/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cw6/lib/task_list_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/cw6/lib/task_list_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/database/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/a13/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/a13/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/a13/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/a13/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/a13/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/a13/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/a13/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/a13/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/a13/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/a13/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/a13/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/a13/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/a13/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/a13/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/windows/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/linux/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/testing/linux/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/linux/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/testing/linux/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/linux/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/testing/linux/flutter/generated_plugins.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/macos/Flutter/GeneratedPluginRegistrant.swift" beforeDir="false" afterPath="$PROJECT_DIR$/testing/macos/Flutter/GeneratedPluginRegistrant.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/testing/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/windows/flutter/generated_plugin_registrant.cc" beforeDir="false" afterPath="$PROJECT_DIR$/testing/windows/flutter/generated_plugin_registrant.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/windows/flutter/generated_plugin_registrant.h" beforeDir="false" afterPath="$PROJECT_DIR$/testing/windows/flutter/generated_plugin_registrant.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing/windows/flutter/generated_plugins.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/testing/windows/flutter/generated_plugins.cmake" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

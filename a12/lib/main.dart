@@ -9,6 +9,8 @@ void main() async {
 }
 
 class InventoryApp extends StatelessWidget {
+  const InventoryApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,6 +21,8 @@ class InventoryApp extends StatelessWidget {
 }
 
 class InventoryHomePage extends StatefulWidget {
+  const InventoryHomePage({super.key});
+
   @override
   _InventoryHomePageState createState() => _InventoryHomePageState();
 }
