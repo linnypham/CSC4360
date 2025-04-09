@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "362223279483",
+    "project_id": "a14-cloud-messaging",
+    "storage_bucket": "a14-cloud-messaging.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362223279483:android:3ba10505ef53e0bdb331de",
+        "android_client_info": {
+          "package_name": "com.example.a14"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUvwT0cVBfgB-YfJlDOYLXVbCyMX6h_wo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
