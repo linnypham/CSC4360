@@ -5,7 +5,7 @@ class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
 
-  // Sign in with email & password
+  
   Future<User?> signInWithEmail(String email, String password) async {
     try {
       final result = await _auth.signInWithEmailAndPassword(
@@ -18,7 +18,7 @@ class AuthService {
     }
   }
 
-  // Register with email, password and profile info
+ 
   Future<User?> registerWithEmail({
     required String firstName,
     required String lastName,
@@ -49,14 +49,14 @@ class AuthService {
     }
   }
 
-  // Sign out
+  
   Future<void> signOut() async {
     await _auth.signOut();
   }
 
-  // Get current user
+
   User? get currentUser => _auth.currentUser;
 
-  // Stream for auth state changes
+  
   Stream<User?> get authStateChanges => _auth.authStateChanges();
 }
